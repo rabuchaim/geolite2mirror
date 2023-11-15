@@ -3,7 +3,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: 0 21 * * 2,5
+    - cron: 0 22 * * 2,5
 jobs:
   run:
     runs-on: ubuntu-latest
