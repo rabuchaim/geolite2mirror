@@ -3,7 +3,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: 0 22 * * 2,5
+    - cron: 0 19 * * 2,5
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -66,7 +66,7 @@ jobs:
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@v0.3.2
       with:
-        keep_latest: 2
+        keep_latest: 1
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
